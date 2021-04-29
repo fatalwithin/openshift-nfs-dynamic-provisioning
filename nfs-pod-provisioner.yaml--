@@ -27,9 +27,9 @@ spec:
             - name: NFS_SERVER # do not change
               value: YOUR_NFS_SERVER_ADDRESS # Ip of the NFS SERVER
             - name: NFS_PATH # do not change
-              value: YOUR_NFS_PATH # path to nfs directory setup
+              value: /mnt/data01/NFS # path to nfs directory setup
       volumes:
        - name: nfs-provisioner-v # same as volumemouts name
          nfs:
            server: YOUR_NFS_SERVER_ADDRESS
-           path: YOUR_NFS_PATH
+           path: /mnt/data01/NFS
